@@ -3,7 +3,7 @@ ARG NODE_IMAGE=node:8-onbuild
 FROM $NODE_IMAGE
 
 # use debug to troubleshoot
-ENV LOG_LEVEL=error
+ENV LOG_LEVEL=error 
 # Required env settings determined by GitHub App
 ENV APP_ID=1234
 ENV WEBHOOK_SECRET=development
