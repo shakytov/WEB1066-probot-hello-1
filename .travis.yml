@@ -68,6 +68,6 @@ jobs:
                                 script:
                                     -docker run --rm $DOCKER_USERNAME/probot-hello:$NODE_VERSION-$(git rev-parse HEAD) npm run $NPM_TARGET
                                     if: branch = master
-                                env:
+                                env: 
                                     - NODE_VERSION=10-jessie
                                     - NPM_TARGET=coveraje            
